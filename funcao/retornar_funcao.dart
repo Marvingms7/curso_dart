@@ -8,4 +8,7 @@ int Function(int) somaParcial(int a) {
 
 main() {
   print(somaParcial(5)(10));
+  var somaCom20 = somaParcial(20);
+  print(somaCom20(2));
+  print(somaCom20(10));
 }
