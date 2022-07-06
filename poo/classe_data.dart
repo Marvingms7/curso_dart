@@ -10,5 +10,11 @@ main() {
   dataAniversario.mes = 03;
   dataAniversario.ano = 2000;
 
+  Data dataCadastro = Data();
+  dataCadastro.dia = 11;
+  dataCadastro.mes = 04;
+  dataCadastro.ano = 2020;
+
   print('${dataAniversario.dia}/${dataAniversario.mes}/${dataAniversario.ano}');
+  print('${dataCadastro.dia}/${dataCadastro.mes}/${dataCadastro.ano}');
 }
