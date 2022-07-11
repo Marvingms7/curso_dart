@@ -1,13 +1,14 @@
 class Data {
-  late int dia;
-  late int mes;
-  late int ano;
+  int? dia;
+  int? mes;
+  int? ano;
 
-  Data(int dia, int mes, int ano) {
-    this.dia = dia;
-    this.mes = mes;
-    this.ano = ano;
-  }
+  //Data(int dia, int mes, int ano) {
+  //  this.dia = dia;
+  //  this.mes = mes;
+  //  this.ano = ano;
+  //}
+  Data([this.dia = 27, this.mes = 3, this.ano = 2000]);
 
   String obterFormatacao() {
     return '$dia/$mes/$ano';
@@ -26,4 +27,6 @@ main() {
 
   print(d1);
   print(dataCadastro.obterFormatacao());
+
+  print(new Data());
 }
