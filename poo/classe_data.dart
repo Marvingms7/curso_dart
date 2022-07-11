@@ -3,25 +3,27 @@ class Data {
   late int mes;
   late int ano;
 
+  Data(int dia, int mes, int ano) {
+    this.dia = dia;
+    this.mes = mes;
+    this.ano = ano;
+  }
+
   String obterFormatacao() {
     return '$dia/$mes/$ano';
   }
 }
 
 main() {
-  var dataAniversario = new Data();
-  dataAniversario.dia = 27;
-  dataAniversario.mes = 03;
-  dataAniversario.ano = 2000;
+  var dataAniversario = new Data(27, 3, 2000);
 
-  Data dataCadastro = Data();
+  Data dataCadastro = Data(14, 01, 1974);
   dataCadastro.dia = 11;
   dataCadastro.mes = 04;
   dataCadastro.ano = 2020;
 
-  //print('${dataAniversario.dia}/${dataAniversario.mes}/${dataAniversario.ano}');
-  //print('${dataCadastro.dia}/${dataCadastro.mes}/${dataCadastro.ano}');
+  String d1 = dataAniversario.obterFormatacao();
 
+  print(d1);
   print(dataCadastro.obterFormatacao());
-  print(dataAniversario.obterFormatacao());
 }
