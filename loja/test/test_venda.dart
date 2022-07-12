@@ -1,6 +1,6 @@
 import '../model/client.dart';
-import '../model/venda.dart';
 import '../model/venda_item.dart';
+import '../model/venda.dart';
 import '../model/produto.dart';
 
 main() {

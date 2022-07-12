@@ -1,11 +1,11 @@
-import './client.dart';
-import './venda_item.dart';
+import 'venda_item.dart';
+import 'client.dart';
 
 class Venda {
-  Client cliente;
+  Client? cliente;
   List<VendaItem> itens;
 
-  Venda({required this.cliente, this.itens = const []});
+  Venda({this.cliente, this.itens = const []});
 
   double get valorTotal {
     return itens
