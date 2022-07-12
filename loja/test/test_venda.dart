@@ -32,5 +32,8 @@ main() {
               desconto: 0.2,
             ))
       ]);
+  print('O nome do cliente é ${venda.cliente?.nome}');
+  print('O Cpf do cliente é ${venda.cliente?.cpf}');
+  print('O primeiro item da lista é ${venda.itens[0].produto?.nome}');
   print('O valor total da venda é: ${venda.valorTotal}');
 }
